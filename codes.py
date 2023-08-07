@@ -152,3 +152,44 @@ num3 = int(input("Enter third number: "))
 
 max_num = max_num(num1, num2, num3)
 print(str(max_num) +" is the greatest")
+
+
+# Dictionaries
+months = {
+    1: "January",
+    2: "February",
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December"
+}
+
+monthsByText = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "may": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
+
+print(months[12])
+print(months.get(12, "Invalid month number"))
+print(months.get(14, "Invalid month number"))
+
+print(monthsByText["Mar"])
+print(monthsByText.get("Dec", "Invalid month number"))
+print(monthsByText.get("dec", "Invalid month number"))
+

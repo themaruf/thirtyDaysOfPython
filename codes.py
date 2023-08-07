@@ -193,3 +193,17 @@ print(monthsByText["Mar"])
 print(monthsByText.get("Dec", "Invalid month number"))
 print(monthsByText.get("dec", "Invalid month number"))
 
+# While loop
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+print("Loop ended!")
+
+stars = "*"
+while len(stars) <= 5:
+    print(stars)
+    stars += "*"
+
+print("Loop ended!")

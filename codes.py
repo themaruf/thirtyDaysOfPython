@@ -121,3 +121,34 @@ hello()
 hello_user("H M", "Maruf")
 
 print(cube(4))
+
+
+# If else statement
+is_male = False
+is_tall = False
+
+if is_male and is_tall:
+    print("Person is male and tall")
+elif is_male and not(is_tall):
+    print("Person is male and not tall")
+elif not(is_male) and is_tall:
+    print("Person is not male but is tall")
+else:
+    print("Person is not male and not tall")
+
+
+# print out maximum number from 3 inputs
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+max_num = max_num(num1, num2, num3)
+print(str(max_num) +" is the greatest")

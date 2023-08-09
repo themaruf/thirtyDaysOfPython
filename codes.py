@@ -207,3 +207,28 @@ while len(stars) <= 5:
     stars += "*"
 
 print("Loop ended!")
+
+# For loop
+def replaceVowel(text):
+    changed_text = ""
+    for char in text:
+        if char in "aeiouAEIOU":
+            changed_text = changed_text + '*'
+        else:
+            changed_text = changed_text + char
+
+    return changed_text
+
+print(replaceVowel("Hello World!"))
+
+
+
+# Try Except
+try:
+    input = int(input("Enter a number: "))
+    print(input)
+    result = 10 / 0
+except ZeroDivisionError as err:
+    print(err)
+except ValueError as err:
+    print(err)
